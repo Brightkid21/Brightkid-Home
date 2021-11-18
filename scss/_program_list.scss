@@ -1,0 +1,154 @@
+.program_list {
+  background-color: #f6fbfb;
+}
+.program_list_page {
+  .filters {
+    margin-bottom: 29px;
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      line-height: 12px;
+      li {
+        display: inline-block;
+        text-align: center;
+        margin: 0 20px;
+        font-weight: 500;
+        font-size: 16px;
+        cursor: pointer;
+        position: relative;
+        color: #677294;
+        @include transform_time(0.3s);
+        line-height: 12px;
+        &:hover {
+          color: $base_color;
+        }
+        &.is-checked {
+          color: $base_color;
+        }
+        @media #{$tab} {
+          margin: 0 15px 20px;
+        }
+      }
+    }
+  }
+  .single_program_list {
+    margin-top: 30px;
+    .single_program_list_content {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.single_program_list {
+  background-color: $white;
+  img {
+    // border-radius: 10px 10px 0 0;
+    width: 100%;
+  }
+  .single_program_list_content {
+    // border-radius: 0 0 10px 10px;
+    padding: 30px;
+    box-shadow: -0.776px 2.898px 29px 0px rgba(0, 0, 0, 0.03);
+    // background-color: $white;
+    @media #{$tab} {
+      margin-bottom: 30px;
+      padding: 20px;
+    }
+    h4 {
+      margin-bottom: 14px;
+      a {
+        color: $heading_color_2;
+        font-size: 24px;
+        font-weight: 700;
+
+        &:hover {
+          color: $base_color;
+        }
+      }
+    }
+    p {
+      font-size: 15px;
+      font-weight: 500;
+      font-family: $font_1;
+    }
+    .program_list_details {
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px solid #f2f1ef;
+      margin-top: 27px;
+      padding-top: 30px;
+      h5 {
+        font-size: 15px;
+        font-weight: 700;
+        text-align: center;
+        span {
+          color: $base_color;
+          display: block;
+          width: 100%;
+          margin-top: 13px;
+        }
+      }
+    }
+  }
+}
+
+//program list page css
+.program_list_page {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+
+  [class^="list_animation_"],
+  [class*=" list_animation_"] {
+    position: absolute;
+    z-index: -1;
+  }
+
+  .list_animation_1 {
+    left: 7%;
+    top: 10%;
+  }
+
+  .list_animation_2 {
+    left: 6%;
+    top: 45%;
+  }
+
+  .list_animation_3 {
+    left: 7%;
+    bottom: 12%;
+  }
+
+  .list_animation_4 {
+    right: 8%;
+    top: 10%;
+  }
+
+  .list_animation_5 {
+    right: 7%;
+    bottom: 45%;
+  }
+
+  .list_animation_6 {
+    right: 8%;
+    bottom: 10%;
+  }
+
+  .single_program_list {
+    margin-top: 30px;
+  }
+
+  .content {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+    text-align: center;
+  }
+}
+.program_details_content {
+  .description {
+    margin-top: 15px;
+  }
+}

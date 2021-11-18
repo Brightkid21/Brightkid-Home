@@ -1,0 +1,105 @@
+.contact_part{
+    position: relative;
+    z-index: 1;
+    @include background ('../img/contact_bg.png');
+    background-position: right bottom;
+    @media #{$tab} {
+        background-image: none;
+    }
+    .contact_form{
+        padding: 50px 40px;
+        text-align: center;
+        background-color: $white;
+        border-radius: 5px;
+        @media #{$mobile} {
+            padding: 30px 20px;
+        }
+        @media #{$tab_device} {
+            padding: 30px 25px;
+        }
+        h2{
+            font-size: 35px;
+            font-weight: 700;
+            color: $heading_color_2;
+            margin-bottom: 40px;
+            @media #{$mobile} {
+                font-size: 25px;
+                margin-bottom: 20px;
+            }
+            @media #{$tab_device} {
+                font-size: 30px;
+                margin-bottom: 20px;
+            }
+        }
+        .form-group{
+            margin-bottom: 25px;
+        }
+        input, textarea{
+            background-color: #f5f9fb;
+            border: 1px solid #f5f9fb;
+            height: 55px;
+            line-height: 55px;
+            padding: 10px 20px;
+            color: $heading_color;
+            font-weight: 500;
+        }
+        ::placeholder{
+            color: #677077;
+        }
+        textarea{
+            height: 200px;
+            padding: 13px 20px;
+        }
+        ::placeholder{
+            color: #677077;
+        }
+        .cu_btn{
+            margin-top: 5px;
+        }
+    }
+
+
+    [class^="contact_animation_"],
+        [class*="contact_animation_"] {
+            position: absolute;
+            z-index: -1;
+    }
+    .contact_animation_1 {
+        left: 5%;
+        top: 5%;
+        right: auto;
+        bottom: auto;
+    }
+    .contact_animation_2 {
+        left: 12%;
+        top: 50%;
+        @media #{$mobile} {
+            display: none;
+        }
+        @media #{$tab_device} {
+            display: none;
+        }
+    }
+    .contact_animation_3 {
+        left: 6%;
+        bottom: 10%;
+    }
+    .contact_animation_4 {
+        right: 5%;
+        top: 5%;
+    }
+    .contact_animation_5 {
+        right: 32%;
+        bottom: 78%;
+    }
+    .contact_animation_6 {
+        right: 5%;
+        bottom: 10%;
+        @media #{$mobile} {
+            display: none;
+        }
+        @media #{$tab_device} {
+            display: none;
+        }
+    }
+}

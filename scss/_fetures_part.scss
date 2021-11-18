@@ -1,0 +1,168 @@
+.list_content_outcome {
+  margin-top: 25px;
+  @media #{$tab} {
+    margin-top: 15px;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      text-align: left;
+      list-style: none;
+      color: #32355d;
+      font-weight: 700;
+      font-size: 15px;
+      padding: 18px 0;
+      position: relative;
+      padding-left: 30px;
+      @media #{$tab} {
+        padding: 18px 0;
+        padding-left: 30px;
+      }
+      i {
+        padding: 10px 0;
+        color: $base_color;
+        margin-right: 7px;
+        position: absolute;
+        left: 0;
+        top: 12px;
+        @media #{$tab} {
+          top: 9px;
+        }
+      }
+    }
+  }
+}
+.stairsImg {
+  object-fit: contain;
+  height: 400px;
+  // padding-right: 20px;
+  @media #{$mobile} {
+    width: 50%;
+  }
+}
+.single_fetures_part {
+  border-radius: 30px;
+  background-color: #0da2ff;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0px 5px 20px 0px rgba(242, 238, 249, 0.1);
+  padding: 35px 40px 40px;
+  text-align: center;
+  margin-bottom: 30px;
+  @include transform_time(0.3s);
+  @media #{$big_device} {
+    &:hover {
+      margin-bottom: 10px;
+      margin-top: -10px;
+    }
+  }
+  @media #{$mobile} {
+    padding: 35px 20px 30px;
+    margin-bottom: 30px;
+  }
+
+  @media #{$tab_device} {
+    padding: 35px 20px 40px;
+    margin-bottom: 30px;
+  }
+  @media #{$medium_device} {
+    padding: 35px 20px 40px;
+  }
+
+  .single_fetures_icon {
+    margin-bottom: 20px;
+    height: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h4 {
+    font-size: 24px;
+    margin-top: 39px;
+    font-weight: 700;
+    a {
+      color: $white;
+    }
+    @media #{$tab} {
+      margin-top: 30px;
+    }
+  }
+
+  p {
+    color: $white;
+    margin-top: 15px;
+  }
+  &.lightblue_bg {
+    background-color: #695ffe;
+  }
+  &.pink_bg {
+    background-color: #f42478;
+  }
+}
+.fetures_part {
+  background-color: #f0efee;
+  position: relative;
+  z-index: 1;
+  [class^="feature_animation_"],
+  [class*=" feature_animation_"] {
+    position: absolute;
+    z-index: -1;
+    @media #{$tab} {
+      display: none;
+    }
+  }
+  .feature_animation_1 {
+    left: 10%;
+    top: 10%;
+  }
+  .feature_animation_2 {
+    right: 10%;
+    top: 15%;
+  }
+  .feature_animation_3 {
+    left: 12%;
+    bottom: 30%;
+  }
+  .feature_animation_4 {
+    right: 5%;
+    bottom: -5%;
+  }
+}
+
+//fetures part style 2 part css
+.home_two_feture {
+  background-color: $base_color;
+  [class^="feature_animation_"],
+  [class*=" feature_animation_"] {
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+//fetures part style 3 part css
+.fetures_part_s3 {
+  .single_fetures_part {
+    padding: 0 45px 0;
+    background-color: transparent;
+    background-image: none;
+    box-shadow: none;
+  }
+}
+.event_sideText {
+  @media #{$tab} {
+    margin-top: 250px;
+  }
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

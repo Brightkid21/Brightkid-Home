@@ -1,0 +1,232 @@
+/******** base color css ********/
+/*  For Button */
+@keyframes dashed_border_running {
+  100% {
+    stroke-dashoffset: -1000;
+  }
+}
+.cu_animated_button .cu_animated_dashes_border {
+  stroke: #fff;
+}
+
+a.elementor-button,
+.elementor-button {
+  color: #ffffff;
+  background-color: #fe4b7b;
+  border-radius: 30px;
+}
+a.elementor-button:hover {
+  background-color: #ffffff;
+  color: #fe4b7b;
+  border-radius: 30px;
+}
+.pc-button.elementor-button.size-lg {
+  border-radius: 30px;
+  padding: 19px 38.15px;
+  font-size: 18px;
+}
+.pc-button.elementor-button {
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  min-height: 58px;
+  min-width: 180px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fe4b7b;
+  border: 0px transparent;
+}
+.elementor-button {
+  display: inline-block;
+  line-height: 1;
+  background-color: #818a91;
+  color: #fff;
+  fill: #fff;
+  text-align: center;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  font-weight: 700;
+}
+.pc-button.elementor-button .button-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: none;
+}
+.elementor-button .elementor-button-text {
+  display: inline-block;
+}
+.pc-button.elementor-button .inner-dashed-border {
+  stroke: #ffffff;
+}
+.pc-button.elementor-button svg.inner-dashed-border {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  animation: dashed_border_running 20s linear infinite both;
+  animation-play-state: paused;
+  stroke-width: 2;
+  stroke-dasharray: 9, 5;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  fill: none;
+  transition: 0.4s;
+}
+.pc-button.elementor-button:hover .animated-dashes.inner-dashed-border {
+  animation-play-state: running;
+}
+
+.cu_btn {
+  display: inline-block;
+  padding: 21px 40px;
+  text-transform: capitalize;
+  line-height: 16px;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 30px;
+  @include transform_time(0.3s);
+  font-family: $font_1;
+
+  @media #{$mobile} {
+    padding: 15px 25px;
+    font-size: 15px;
+  }
+
+  &.btn_1 {
+    background-color: transparent;
+    border: 1px solid $base_color;
+    color: $base_color;
+
+    &:hover {
+      background-color: $base_color;
+      border: 1px solid $base_color;
+      color: $white;
+    }
+  }
+
+  &.btn_2 {
+    background-color: $base_color;
+    border: 1px solid $base_color;
+    color: $white;
+    padding: 21px 55px;
+
+    &:hover {
+      background-color: transparent;
+      border: 1px solid $base_color;
+      color: $base_color;
+    }
+  }
+
+  &.white_btn {
+    background-color: transparent;
+    border: 1px solid $white;
+    color: $white;
+
+    &:hover {
+      background-color: transparent;
+      border: 1px solid $base_color;
+      color: $white;
+      background-color: $base_color;
+    }
+  }
+
+  &.white_bg {
+    background-color: $white;
+    border: 1px solid $white;
+    color: $base_color;
+
+    &:hover {
+      background-color: transparent;
+      border: 1px solid $white;
+      color: $white;
+      background-color: $base_color;
+    }
+  }
+
+  &.btn_3 {
+    background-color: #f9ae15;
+    border: 1px solid #f9ae15;
+    color: $white;
+
+    &:hover {
+      background-color: transparent;
+      border: 1px solid #f9ae15;
+      color: #f9ae15;
+    }
+  }
+
+  &.tag_btn {
+    background-color: #f0f2f9;
+    border: 1px solid #f0f2f9;
+    color: #5a5a77;
+    border-radius: 5px;
+    margin-right: 7px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-weight: 500;
+    font-family: "Quicksand", sans-serif;
+    font-size: 14px;
+    padding: 6px 12px;
+
+    &:hover {
+      background-color: transparent;
+      border: 1px solid $base_color;
+      color: $white;
+      background-color: $base_color;
+    }
+  }
+}
+
+.animated_border_effect {
+  position: relative;
+  background-color: #fe4b7b;
+  border: 1px solid #fe4b7b;
+  color: #fff;
+  padding: 21px 55px;
+
+  #border_animation {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  #chain_border_animation {
+    -webkit-animation: dash 1s infinite linear;
+    -moz-animation: dash 1s infinite linear;
+    -o-animation: dash 1s infinite linear;
+    animation: dash 1s infinite linear;
+  }
+
+  @-webkit-keyframes dash {
+    to {
+      stroke-dashoffset: 5;
+    }
+  }
+
+  @-moz-keyframes dash {
+    to {
+      stroke-dashoffset: 5;
+    }
+  }
+
+  @-o-keyframes dash {
+    to {
+      stroke-dashoffset: 5;
+    }
+  }
+
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 5;
+    }
+  }
+}

@@ -1,0 +1,120 @@
+.single_count_section {
+  text-align: center;
+  @media #{$tab} {
+    margin-bottom: 30px;
+  }
+  img {
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 30px;
+    @media #{$tab} {
+      margin-bottom: 15px;
+    }
+    @media #{$tab_device} {
+      max-width: 55px;
+    }
+  }
+  h4 {
+    font-size: 45px;
+    line-height: 1;
+    color: $base_color;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #fe4b7b;
+    @media #{$tab} {
+      font-size: 25px;
+    }
+  }
+  h5 {
+    font-size: 28px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 0;
+    @media #{$tab} {
+      font-size: 16px;
+    }
+  }
+}
+.count_section {
+  // background-color: #341c77;
+  // overflow: hidden;
+  // position: relative;
+  padding: 100px 0;
+  height: 40vh;
+  background-image: url("../img/banner_3.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-blend-mode: overlay;
+  z-index: -1;
+  @media #{$mobile} {
+    height: 60vh;
+  }
+  [class^="count_animation_"],
+  [class*=" count_animation_"] {
+    position: absolute;
+    z-index: -1;
+  }
+  .count_animation_1 {
+    left: 17%;
+    top: 10%;
+  }
+
+  .count_animation_2 {
+    left: 50px;
+    top: 20%;
+  }
+
+  .count_animation_3 {
+    left: 12%;
+    top: 44%;
+  }
+
+  .count_animation_4 {
+    left: 5%;
+    bottom: 25%;
+  }
+
+  .count_animation_5 {
+    left: 10%;
+    bottom: 8%;
+  }
+
+  .count_animation_6 {
+    right: 50%;
+    top: 10%;
+  }
+
+  .count_animation_7 {
+    right: 17%;
+    top: 10%;
+  }
+
+  .count_animation_8 {
+    right: 50px;
+    top: 20%;
+  }
+
+  .count_animation_9 {
+    right: 12%;
+    top: 44%;
+  }
+
+  .count_animation_10 {
+    right: 5%;
+    bottom: 25%;
+  }
+
+  .count_animation_11 {
+    right: 10%;
+    bottom: 8%;
+  }
+
+  .count_animation_12 {
+    right: 50%;
+    bottom: 5%;
+  }
+}
+.earlyEduIcon {
+  height: 40px;
+  object-fit: contain;
+}

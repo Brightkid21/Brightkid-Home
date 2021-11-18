@@ -1,0 +1,144 @@
+.testimonial_part {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  [class^="testimonial_animation_"],
+  [class*="testimonial_animation_"] {
+    position: absolute;
+    z-index: -1;
+  }
+  .testimonial_animation_1 {
+    left: 7%;
+    top: 12%;
+    @media #{$mobile} {
+      img {
+        max-width: 50px;
+      }
+    }
+    @media #{$tab_device} {
+      img {
+        max-width: 60px;
+      }
+    }
+  }
+  .testimonial_animation_2 {
+    left: 7%;
+    bottom: 20%;
+    img {
+      max-width: 50px;
+    }
+    @media #{$mobile} {
+      img {
+        max-width: 50px;
+      }
+    }
+    @media #{$tab_device} {
+      img {
+        max-width: 60px;
+      }
+    }
+  }
+  .testimonial_animation_3 {
+    right: 7%;
+    top: 12%;
+    @media #{$mobile} {
+      img {
+        max-width: 50px;
+      }
+    }
+    @media #{$tab_device} {
+      img {
+        max-width: 60px;
+      }
+    }
+  }
+  .testimonial_animation_4 {
+    right: 8%;
+    bottom: 8%;
+    @media #{$mobile} {
+      img {
+        max-width: 50px;
+      }
+    }
+    @media #{$tab_device} {
+      img {
+        max-width: 60px;
+      }
+    }
+  }
+}
+.testimonial_slider {
+  img {
+    width: auto !important;
+  }
+  .client_speech {
+    padding: 40px 30px 72px;
+    background-color: #fb486f;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    @media #{$mobile} {
+      padding: 20px 15px 15px;
+    }
+    @media #{$tab_device} {
+      padding: 20px 15px 15px;
+    }
+    p {
+      color: $white;
+      font-size: 15px;
+    }
+    img {
+      margin-bottom: 22px;
+      @media #{$mobile} {
+        margin-bottom: 10px;
+      }
+      @media #{$tab_device} {
+        margin-bottom: 10px;
+      }
+    }
+    .client_speech_shape {
+      position: absolute;
+      left: 50px;
+      bottom: -40px;
+      margin-bottom: 0;
+      @media #{$mobile} {
+        left: 10px;
+        bottom: -30px;
+      }
+      @media #{$tab_device} {
+        left: 10px;
+        bottom: -30px;
+      }
+    }
+    &.bg_2 {
+      background-color: #5798fe;
+    }
+  }
+  .client_info {
+    position: relative;
+    padding-left: 80px;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      border-radius: 50%;
+      max-width: 65px;
+      max-height: 65px;
+    }
+    h4 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 0;
+      padding-left: 18px;
+      span {
+        font-size: 14px;
+        color: $text_color;
+        display: block;
+        width: 100%;
+        margin-top: 7px;
+      }
+    }
+  }
+}

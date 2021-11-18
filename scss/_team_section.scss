@@ -1,0 +1,137 @@
+
+.single_team_section{
+    text-align: center;
+    @media #{$tab}{
+        margin-bottom: 30px;
+    }
+    
+    .teacher_profile_img{
+        overflow: hidden;
+        border-radius: 5px 5px 0 0;
+        max-height: 250px;
+        width: 100%;
+        img{
+            border-radius: 5px 5px 0 0;
+            @include transform_time(.3s);
+            transform: scale(1);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;            
+        }
+    }
+    &:hover{
+        .teacher_profile_img{
+            img{
+                transform: scale(1.1);
+            }
+        }
+    }
+    h4{
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 34px;
+        margin-bottom: 5px;
+        a{
+            color: $heading_color_2;
+            &:hover{
+                color: $base_color;
+            }
+        }
+        @media #{$tab}{
+            margin-top: 20px;
+        }
+        @media #{$medium_device}{
+            margin-top: 20px;
+        }
+    }
+    p{
+        font-weight: 500;
+        font-size: 15px;
+    }
+    .teacher_category{
+        font-size: 15px;
+        color: $white;
+        border-radius: 5px;
+        background-color: $base_color;
+        font-weight: 700;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        text-align: center;
+        width: 151px;
+        height: 31px;
+        line-height: 31px;
+        bottom: 76px;
+        display: inline-block;
+        @media #{$mobile}{
+            bottom: 92px;
+        }
+        @media #{$tab_device}{
+            bottom: 92px;
+        }
+        @media #{$medium_device}{
+            bottom: 62px;
+        }
+    }
+}
+.col-lg-4{
+    &:nth-child(2n+1){
+        .single_team_section{
+            .teacher_category{
+                background-color: #4ba9ff;
+            }
+        }
+    }
+    &:nth-child(3n+1){
+        .single_team_section{
+            .teacher_category{
+                background-color: #31c9a8;
+            }
+        }
+    }
+}
+.team_section{
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    [class^="team_animation_"], [class*=" team_animation_"] {
+        position: absolute;
+        z-index: -1;
+    }
+    .team_animation_1{
+        left: -20px;
+        top: -100px;
+    }
+    .team_animation_2{
+        left: 7%;
+        top: 35%;
+    }
+    .team_animation_3{
+        left: 7%;
+        bottom: 12%;
+    }
+    .team_animation_4{
+        right: 0%;
+        top: -10%;
+    }
+    .team_animation_5{
+        right: 10%;
+        bottom: 31%;
+    }
+}
+.single_page_team{
+    padding: 90px 0 120px;
+    @media #{$mobile}{
+        padding: 80px 0 50px;
+    }
+    @media #{$tab_device}{
+        padding: 100px 0 70px;
+    }
+    .single_team_section{
+        margin-top: 50px;
+        @media #{$tab}{
+            margin-top: 0;
+        }
+    }
+}

@@ -1,0 +1,162 @@
+.teacher_list {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background-image: -moz-linear-gradient(90deg, rgb(252, 63, 114) 0%, rgb(252, 90, 134) 100%);
+  background-image: -webkit-linear-gradient(90deg, rgb(252, 63, 114) 0%, rgb(252, 90, 134) 100%);
+  background-image: -ms-linear-gradient(90deg, rgb(252, 63, 114) 0%, rgb(252, 90, 134) 100%);
+  [class^="teacher_list_animation_"],
+  [class*="teacher_list_animation_"] {
+    position: absolute;
+    z-index: -1;
+  }
+  .teacher_list_animation_1 {
+    left: 7%;
+    top: 12%;
+    @media #{$mobile} {
+      img {
+        max-width: 50px;
+      }
+    }
+    @media #{$tab_device} {
+      img {
+        max-width: 60px;
+      }
+    }
+  }
+  .teacher_list_animation_2 {
+    left: 7%;
+    bottom: 20%;
+    @media #{$mobile} {
+      img {
+        max-width: 50px;
+      }
+    }
+    @media #{$tab_device} {
+      img {
+        max-width: 60px;
+      }
+    }
+  }
+  .teacher_list_animation_3 {
+    right: 7%;
+    top: 12%;
+    @media #{$mobile} {
+      img {
+        max-width: 50px;
+      }
+    }
+    @media #{$tab_device} {
+      img {
+        max-width: 60px;
+      }
+    }
+  }
+  .teacher_list_animation_4 {
+    right: 7%;
+    bottom: 20%;
+    @media #{$mobile} {
+      img {
+        max-width: 50px;
+      }
+    }
+    @media #{$tab_device} {
+      img {
+        max-width: 60px;
+      }
+    }
+  }
+  .teacher_list_animation_5 {
+    right: 55%;
+    top: 4%;
+    @media #{$mobile} {
+      img {
+        max-width: 50px;
+      }
+    }
+    @media #{$tab_device} {
+      img {
+        max-width: 60px;
+      }
+    }
+  }
+  .teacher_list_animation_6 {
+    right: 48%;
+    bottom: 10%;
+    @media #{$mobile} {
+      img {
+        max-width: 50px;
+      }
+    }
+    @media #{$tab_device} {
+      img {
+        max-width: 60px;
+      }
+    }
+  }
+
+  .teacher_list_shape {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 50%;
+    transform: translatey(-15%);
+    text-align: center;
+    z-index: -1;
+    position: absolute;
+  }
+}
+.teacher_list_iner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.single_teacher_list {
+  position: relative;
+  z-index: 9;
+  flex: 22% 0 0;
+  text-align: center;
+  @media #{$tab} {
+    flex: 47% 0 0;
+    margin-bottom: 20px;
+  }
+  @media #{$xs_mobile} {
+    flex: 100% 0 0;
+  }
+  .teacher_list_img {
+    max-width: 170px;
+    max-height: 170px;
+    margin: 0 auto;
+    &.square {
+      border-radius: 5px;
+      border: 1px solid $white;
+      padding: 10px;
+    }
+    &.circle {
+      border-radius: 50%;
+      border: 1px solid $white;
+      padding: 10px;
+      img {
+        border-radius: 50%;
+      }
+    }
+  }
+  h5 {
+    font-size: 20px;
+    color: $white;
+    margin-top: 36px;
+    text-align: center;
+    @media #{$tab} {
+      margin-top: 15px;
+    }
+  }
+  p {
+    font-size: 15px;
+    color: $white;
+    margin-top: 10px;
+    text-align: center;
+    @media #{$tab} {
+      margin-top: 10px;
+    }
+  }
+}

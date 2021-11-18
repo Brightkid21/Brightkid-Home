@@ -1,0 +1,137 @@
+/*----------------------------------------------------
+@File: Default Styles
+@Author: Droitthemes
+@URL: http://wethemez.com
+Author E-mail: 
+
+This file contains the styling for the actual template, this
+is the file you need to edit to change the look of the
+template.
+---------------------------------------------------- */
+/*=====================================================================
+@Template Name: Kidzo
+@Author: 
+@Developed By: Palash
+@Developer URL: 
+Author E-mail: 
+
+@Default Styles
+
+Table of Content:
+01/ Variables
+02/ mixins
+03/ reset
+04/ button
+05/ header
+06/ breadcrumb part
+07/ banner part
+08/ about us
+09/ services part
+10/ fetures part
+11/ event part 
+12/ success story
+13/ gallery
+14/ cta part
+15/ blog post
+16/ program list
+17/ count section
+18/ team section
+19/ client review section
+20/ team section
+21/ get start section
+22/ event page
+23/ event page
+24/ contact part
+25/ teacher details
+26/ cta part
+27/ footer
+------------------------------------------------------------*/
+
+//reset css
+@import "variables";
+
+//reset css
+@import "mixins";
+
+//reset css
+@import "reset";
+
+//reset css
+@import "button";
+
+//header css
+@import "header";
+
+//breadcrumb part style css
+@import "breadcrumb_part";
+
+//banner part style css
+@import "banner_part";
+
+//about part style css
+@import "about_us";
+
+//services part style css
+@import "services_part";
+
+//services part style css
+@import "fetures_part";
+
+//event part style css
+@import "event_part";
+
+//success story part style css
+@import "success_story";
+
+//gallery part style css
+@import "gallery";
+
+//cta part part style css
+@import "cta_part";
+
+//blog post part style css
+@import "blog_post";
+
+//program list style css
+@import "program_list";
+
+//count section style css
+@import "count_section";
+
+//team section style css
+@import "team_section";
+
+//team section style css
+@import "client_review";
+
+//team section style css
+@import "teacher_list";
+
+//get start section style css
+@import "get_start_part";
+
+//event page style css
+@import "event_page";
+
+//event page style css
+@import "event_details";
+
+//contact part style css
+@import "contact_part";
+
+//teacher details part css
+@import "teacher_details_info";
+
+//cta part css
+@import "cta_part";
+
+//contact part css
+@import "contact";
+
+//countdown part css
+@import "countdown";
+
+//footer css
+@import "footer";
+
+@import "my_custom";

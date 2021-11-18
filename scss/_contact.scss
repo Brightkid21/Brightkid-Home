@@ -1,0 +1,133 @@
+.contact_form {
+  margin-top: 0;
+  h3 {
+    font-size: 30px;
+    margin-bottom: 12px;
+    font-weight: 700;
+  }
+  p {
+    margin-bottom: 30px;
+  }
+}
+.contact_sidebar {
+  @media (max-width: 991px) {
+    padding-top: 20px;
+  }
+  h4 {
+    font-size: 24px;
+    margin-bottom: 37px;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+  .single_contact_sidebar {
+    position: relative;
+    padding-left: 43px;
+    margin-bottom: 30px;
+    i {
+      position: absolute;
+      left: 0;
+      top: 3px;
+      color: $base_color;
+      font-size: 25px;
+    }
+    h5 {
+      font-size: 20px;
+      font-weight: 900;
+      margin-bottom: 5px;
+    }
+    p {
+      line-height: 24px;
+    }
+  }
+}
+.blog_sidebar {
+  .social_icon {
+    margin-top: 15px;
+  }
+}
+.contactMap {
+  height: 500px;
+}
+
+#contactMap {
+  height: 100% !important;
+}
+.contact_page {
+  .form_single_item input,
+  .form_single_item label,
+  .form_single_item select,
+  .form_single_item textarea {
+    border: 1px solid #f5f9fb;
+    background-color: #f5f9fb;
+    color: #0b1c39;
+    font-weight: 500;
+  }
+  .form_single_item input:focus,
+  .form_single_item textarea:focus {
+    background-color: #fff;
+    border: 1px solid #fbeff4;
+    color: $heading_color;
+    box-shadow: none;
+    &::placeholder {
+      color: $heading_color;
+    }
+  }
+  .social_icon {
+    display: flex;
+    margin-top: 33px;
+
+    a {
+      width: 48px;
+      height: 48px;
+      background-color: #3b5998;
+      border-radius: 50%;
+      display: inline-block;
+      line-height: 48px;
+      text-align: center;
+      color: $white;
+      font-size: 17px;
+      margin-right: 8px;
+      border-style: solid;
+      border-width: 2px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    a[href*="facebook"] {
+      background-color: #475993;
+      border-color: #475993;
+      &:hover {
+        background-color: #fff;
+        color: #475993;
+      }
+    }
+    a[href*="instagram"] {
+      background-color: #fe2a39;
+      border-color: #fe2a39;
+      &:hover {
+        background-color: #fff;
+        color: #fe2a39;
+      }
+    }
+    a[href*="linkedin"] {
+      background-color: #0e76a8;
+      border-color: #0e76a8;
+      &:hover {
+        background-color: #fff;
+        color: #0e76a8;
+      }
+    }
+    a[href*="dribbble"] {
+      background-color: #fe2a39;
+      border-color: #fe2a39;
+      &:hover {
+        background-color: #fff;
+        color: #fe2a39;
+      }
+    }
+  }
+  .cu_btn {
+    margin-top: 5px;
+    margin-bottom: 30px;
+  }
+}

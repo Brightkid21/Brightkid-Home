@@ -1,0 +1,242 @@
+.teacher_details_info{
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    [class^="teacher_details_animation_"], [class*=" teacher_details_animation_"] {
+        position: absolute;
+        z-index: -1;
+    }
+    &.wave_shape_bg {
+        background-image: url(../img/animation_shape/services_bg_shape.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: 100%;
+      }
+
+      &.reddish_wave_shape_bg {
+        background-image: url(../img/waves/Cloud_ReddishPink.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: 100%;
+      }
+      
+    .teacher_details_animation_1{
+        left: 7%;
+        top: 10%;
+    }
+    .teacher_details_animation_2{
+        left: 6%;
+        top: 45%;
+    }
+    .teacher_details_animation_3{
+        left: 7%;
+        bottom: 12%;
+    }
+    .teacher_details_animation_4{
+        right: 8%;
+        top: 10%;
+    }
+    .teacher_details_animation_5{
+        right: 7%;
+        bottom: 45%;
+    }
+    .teacher_details_animation_6{
+        right: 8%;
+        bottom: 10%;
+    }
+    .profile_img{
+        padding-right: 20px;
+        position: relative;
+        z-index: 1;
+        margin-left: 25px;
+        .teacher_profile_shape{
+            position: absolute;
+            top: -25px;
+            left: -25px;
+            z-index: -1;
+        }
+        @media #{$mobile}{
+            padding-right: 0;
+        }
+        img{
+            border-radius: 5px;
+        }
+    }
+    .profile_content{
+        @media #{$xs_mobile}{
+            margin-top: 40px;
+        }
+        .teacher_category{
+            font-size: 22px;
+            color: #fff;
+            border-radius: 5px;
+            background-color: #4CA9FF;
+            font-weight: 700;
+            margin-top: 20px;
+            display: inline-block;
+            text-align: center;
+            line-height: 24px;
+            padding: 12px 18px;
+        }
+        .teacher_profile_info{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            margin-top: 30px;
+            margin-bottom: 17px;
+            @media #{$xs_mobile}{
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+            li{
+                display: block;
+                font-size: 20px;
+                font-family: "Nunito", sans-serif;
+                color: #626472;
+                position: relative;
+                margin: 12px 0;
+                font-weight: 600;
+                @media #{$xs_mobile}{
+                    margin: 5px 0;
+                    margin-right: 20px;
+                }
+                @media #{$mobile}{
+                    margin-right: 30px;
+                }
+                span{
+                    color: #12265A;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .teacher_social_info {
+            display: flex;
+            margin-top: 33px;
+            a {
+                width: 48px;
+                height: 48px;
+                background-color: #3b5998;
+                border-radius: 50%;
+                display: inline-block;
+                line-height: 48px;
+                text-align: center;
+                color: $white;
+                font-size: 17px;
+                margin-right: 8px;
+                border-style: solid;
+                border-width: 2px;
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+            a[href*="facebook"] {
+                background-color: #475993;
+                border-color: #475993;
+                &:hover{
+                    background-color: #fff;
+                    color: #475993;
+                }
+            }
+            a[href*="instagram"] {
+                background-color: #FE2A39;
+                border-color: #FE2A39;
+                &:hover{
+                    background-color: #fff;
+                    color: #FE2A39;
+                }
+            }
+            a[href*="linkedin"] {
+                background-color: #0e76a8;
+                border-color: #0e76a8;
+                &:hover{
+                    background-color: #fff;
+                    color: #0e76a8;
+                }
+            }
+            a[href*="dribbble"] {
+                background-color: #FE2A39;
+                border-color: #FE2A39;
+                &:hover{
+                    background-color: #fff;
+                    color: #FE2A39;
+                }
+            }
+        }
+    }
+    .description{
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 500;
+    }
+    .description + .description{
+        margin-top: 12px;
+    }
+    .work_summary{
+        .work_summary_item{
+            text-align: center;
+            padding: 40px;
+            background-image: linear-gradient(100deg, #A762FF 0%, #D500F8 100%);
+            border-radius: 20px;
+            @media #{$tab}{
+                margin-bottom: 30px;
+            }
+            p{
+                color: #FFFFFF;
+                font-family: "Nunito", Sans-serif;
+                font-size: 15px;
+                font-weight: 900;
+            }
+            h2{
+                color: #FFFFFF;
+                font-size: 40px;
+                font-weight: 900;
+                margin-top: 15px;
+            }
+        }
+        .col-lg-3{
+            &:nth-child(2){
+                .work_summary_item{
+                    background-image: linear-gradient(100deg, #FFB867 0%, #FF675E 100%);
+                }
+            }
+            &:nth-child(3){
+                .work_summary_item{
+                    background-image: linear-gradient(100deg, #95E294 0%, #0ACD88 100%);
+                }
+            }
+            &:nth-child(4){
+                .work_summary_item{
+                    background-image: linear-gradient(100deg, #72CFFF 0%, #1595FF 100%);
+                }
+            }
+        }   
+    }
+    .single_achivement{
+        position: relative;
+        padding: 20px 15px 0;
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        h5{
+            font-size: 24px;
+            font-weight: 700;
+            color: $heading_color_2;
+        }
+        p{
+            font-size: 15px;
+            font-family: $font_1;
+            color: #677077;
+            font-weight: 500;
+            margin-bottom: 16px;
+            @media #{$tab}{
+                margin-bottom: 6px;
+            }
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+//dl countdown wrapper
+.dl_countdown_wrapper {
+    position: relative;
+    float: right;
+    width: 100%;
+    .dl_countdown_inner {
+        padding: 0 20px;
+        text-align: center;
+        display: inline-block;
+        border-radius: 10px;
+        transform: all .3s;
+        flex: 25% 0 0;
+        @media (max-width: 768px){
+            margin-left: 0;
+            flex: 50% 0 0;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        span {
+            font-size: 48px;
+            font-weight: 700;
+            color: #fff;
+            line-height: 1;
+            margin-bottom: 10px;
+            display: inline-block;
+            transform: all .3s;
+            font-family: "Quicksand", sans-serif;
+            @media (max-width: 768px){
+                font-size: 25px;
+            }
+        }
+        .dl_desc {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 15px;
+            color: #fff;
+            transform: all .3s;
+        }
+    }
+    .dl_countdown_shape{
+        position: absolute;
+        bottom: 0;
+        right: -87%;
+    }
+}
+.dl_countdown_inner_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+//dl countdown wrapper

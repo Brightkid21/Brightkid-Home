@@ -1,0 +1,100 @@
+.breadcrumb_part {
+  @include background("../img/breadcrumb_bg.png");
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 600px;
+  @media #{$medium_device} {
+    height: 450px;
+  }
+  @media #{$tab} {
+    height: 450px;
+  }
+  .breadcrumb_iner {
+    text-align: center;
+    margin-top: 50px;
+    @media #{$tab} {
+      margin-top: 0;
+    }
+  }
+  h2 {
+    font-size: 45px;
+    font-weight: 700;
+    color: $white;
+    margin-bottom: 20px;
+    @media #{$medium_device} {
+      font-size: 35px;
+      line-height: 45px;
+      margin-bottom: 5px;
+    }
+    @media #{$tab} {
+      font-size: 25px;
+      line-height: 35px;
+      margin-bottom: 5px;
+    }
+  }
+  .breadcrumb_iner_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      font-size: 16px;
+      color: #c9c9d1;
+      &:hover {
+        color: $base_color;
+      }
+    }
+    p {
+      font-size: 16px;
+      color: #c9c9d1;
+      font-family: $font_1;
+    }
+    span {
+      margin: 0 5px;
+      color: #c9c9d1;
+    }
+  }
+  [class^="breadcrumb_animation_"],
+  [class*="breadcrumb_animation_"] {
+    position: absolute;
+    z-index: 1;
+  }
+  .breadcrumb_animation_4 {
+    left: 5%;
+    top: 30%;
+    right: auto;
+    bottom: auto;
+  }
+  .breadcrumb_animation_5 {
+    right: 8%;
+    top: 33%;
+    @media #{$mobile} {
+      display: none;
+    }
+    @media #{$tab_device} {
+      display: none;
+    }
+  }
+  .breadcrumb_animation_7 {
+    left: 15%;
+    bottom: 14%;
+  }
+  .breadcrumb_animation_10 {
+    right: 5%;
+    bottom: 25%;
+  }
+  .breadcrumb_animation_12 {
+    right: 31%;
+    bottom: 23%;
+  }
+  .breadcrumb_animation_13 {
+    right: 66%;
+    top: 30%;
+    @media #{$mobile} {
+      display: none;
+    }
+    @media #{$tab_device} {
+      display: none;
+    }
+  }
+}
