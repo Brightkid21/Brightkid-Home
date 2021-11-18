@@ -1,0 +1,209 @@
+/* RemixDesign | woaichidapi@163.com | Redesigned by JimmyCheung */
+
+.audioplayer {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding: 0 24px;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    border-radius: 4px;
+    background: #fff;
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 10px 30px 0px rgba(20, 3, 67, 0.08);
+    border-left: 5px solid #ff5684;
+}
+
+.audioplayer-playpause {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.audioplayer .audioplayer-playpause a{
+    position: relative;
+    z-index: 1;
+}
+.audioplayer .audioplayer-playpause a:after{
+    position: absolute;
+    left: 0;
+    top: -11px;
+    width: 20px;
+    height: 20px;
+    content: "\f04b";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #424255;
+}
+
+.audioplayer-playing .audioplayer-playpause a:after{
+    top: -5px;
+    content: "\e6ae";
+    font-family: 'themify';
+    color: #fe4b7b;
+}
+
+.audioplayer-playing .audioplayer-playpause a {
+    content: '';
+    display: flex;
+    justify-content: space-between;
+    width: 12px;
+    height: 14px;
+}
+
+.audioplayer-time {
+    display: flex;
+    width: 40px;
+    justify-content:center;
+    font-size: 13px;
+    color: #424255;
+    font-weight: 700;
+}
+
+.audioplayer-time-current {
+    margin-left: 24px;
+}
+
+.audioplayer-time-duration {
+    margin-right: 24px;
+}
+
+.audioplayer-bar {
+    position: relative;
+    display: flex;
+    margin: 0 12px;
+    height: 12px;
+    flex-basis: 0;
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+.audioplayer-bar::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 12px;
+    background-color: #f2f0f6;
+}
+
+.audioplayer-bar > div {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.audioplayer-bar-loaded {
+    z-index: 1;
+    height: 12px;
+    background: #e9e7f1;
+}
+
+.audioplayer-bar-played {
+    flex-direction: row-reverse;
+    z-index: 2;
+    height: 12px;
+    background-color: #ff5684;
+}
+
+.audioplayer-bar-played::after {
+    display: none;
+}
+
+.audioplayer:not(.audioplayer-playing) .audioplayer-bar-played::after {
+    border: 2px solid #BEC8D2;
+}
+
+.audioplayer-playing .audioplayer-bar-played::after {
+    border: 2px solid #0059FF;
+
+}
+
+.audioplayer-volume {
+    display: flex;
+    align-items: center;
+}
+
+.audioplayer-volume-button {
+    display: flex;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.audioplayer-volume-button a {
+    display: flex;
+    width: 6px;
+    height: 8px;
+    background-color: #424255;
+    position: relative;
+}
+
+.audioplayer-volume-button a:before, .audioplayer-volume-button a:after {
+    content: '';
+    position: absolute;
+}
+
+.audioplayer-volume-button a:before {
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-right: 9px solid #424255;
+    border-bottom: 8px solid transparent;
+    border-left: none;
+    top: -4px;
+}
+
+.audioplayer:not(.audioplayer-mute) .audioplayer-volume-button a:after {
+    left: 10px;
+    top: 0px;
+    width: 8px;
+    height: 8px;
+    border: 6px double #424255;
+    border-width: 6px 6px 0 0;
+    border-radius: 0 12px 0 0;
+    transform: rotate(45deg);
+
+}
+
+.audioplayer-mute .audioplayer-volume-button a {
+    background-color: #FD4F1A;
+}
+
+.audioplayer-mute .audioplayer-volume-button a:before {
+    border-right: 9px solid #FD4F1A;
+}
+
+.audioplayer-volume-adjust {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+}
+
+.audioplayer-volume-adjust > div {
+    position: relative;
+    display: flex;
+    width: 60px;
+    height: 10px;
+    cursor: pointer;
+    background-color: #BEC8D2;
+}
+
+.audioplayer-volume-adjust div div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10px;
+    background-color: #05bc0e;
+}
+
+/* responsive | you can change the max-width value to match your theme */
+
+@media screen and (max-width: 679px) {
+    .audioplayer-volume-adjust {
+        display: none;
+    }
+}
